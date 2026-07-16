@@ -1,0 +1,41 @@
+mkdir -p scripts
+
+for app in \
+chrome \
+coccoc \
+chromium \
+brave \
+flatpak \
+github-desktop \
+vscode \
+vscodium \
+sublime-tex \
+notepadplusplus \
+nvm \
+nodejs \
+python \
+flutter \
+android-studio \
+warp \
+teamviewer \
+telegram \
+vysor \
+htop \
+joplin \
+atom \
+docker \
+flameshot \
+gedit \
+gh \
+kvm-qemu \
+docker-desktop \
+git \
+obsidian \
+postman \
+discord \
+zsh \
+oh-my-zsh \
+fonts 
+do
+    touch "scripts/$app.sh"
+done
