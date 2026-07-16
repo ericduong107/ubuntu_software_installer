@@ -19,7 +19,7 @@ jobs:
 
       - name: Copy install script
         run: |
-          cp install.sh pages/installer/ubuntu_software_installer.sh
+          cp install.sh pages/i
 
       - name: Commit & Push
         run: |
