@@ -1,0 +1,39 @@
+name: Sync install script to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+
+      - name: Clone GitHub Pages repo
+        run: |
+          git clone https://x-access-token:${{ secrets.PAGES_REPO_TOKEN }}@github.com/ericduong107/ericduong107.github.io.git pages
+
+      - name: Copy install script
+        run: |
+          cp install.sh pages/i
+
+      - name: Commit & Push
+        run: |
+          cd pages
+
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add i
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Auto update install script"
+          git push

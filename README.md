@@ -8,6 +8,10 @@
 - [Github Raw để gõ lệnh](https://raw.githubusercontent.com/ericduong107/ubuntu_software_installer/main/install.sh)
 ```bash
 wget -O - https://raw.githubusercontent.com/ericduong107/ubuntu_software_installer/main/install.sh | bash
+// Or
+wget -O - https://ericduong107.github.io/installer/ubuntu_software_installer | bash
+// Or
+curl -fsSL https://ericduong107.github.io/installer/ubuntu_software_installer | bash
 ```
 
 ## Script thư mục chứa các script con
