@@ -105,7 +105,7 @@ CHOICES=$(whiptail --title "$TITLE" \
     "nvm" "Node Version Manager (NVM)" OFF \
     "obsidian" "" OFF \
     "oh-my-zsh" "" OFF \
-    "postman" "" OFF \
+    "postman" "Nền tảng phần mềm phổ biến giúp các lập trình viên và người kiểm thử (tester) thiết kế, xây dựng, chia sẻ và kiểm thử API" OFF \
     "python" "Python Environment (Dynamic)" OFF \
     "sublime-text" "Sublime Text Editor" OFF \
     "teamviewer" "TeamViewer Remote Desktop" OFF \
