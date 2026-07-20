@@ -97,6 +97,8 @@ CHOICES=$(whiptail --title "$TITLE" \
     "git" "" OFF \
     "github-desktop" "GitHub Desktop Client" OFF \
     "htop" "Trình giám sát hệ thống Htop" ON \
+    "ibus-unikey" "Bộ gõ tiếng việt iBus Unikey" ON \
+    "ibus-bamboo" "Bộ gõ tiếng việt iBus Bamboo" OFF \
     "joplin" "Ứng dụng ghi chú Joplin" OFF \
     "kvm-qemu" "Ảo hóa KVM/QEMU & Libvirt" OFF \
     "libreoffice" "Bộ ứng dụng văn phòng mã nguồn mở, miễn phí, và mạnh mẽ, thường được dùng làm giải pháp thay thế cho Microsoft Office" ON \
